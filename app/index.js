@@ -1,11 +1,12 @@
-setInterval(() => {
-  var style = {
-    color: '#' + (Math.random() * 0xffffff & 0xffffff).toString(16)
-  }
+import ace from 'brace'
+import 'brace/mode/javascript'
+import 'brace/theme/monokai'
 
-  style = Object.keys(style).map((e, i) => {
-    return e + ': ' + style[e] + ';'
-  }).join('')
+var editor = ace.edit('editor')
+editor.getSession().setMode('ace/mode/javascript')
+editor.setTheme('ace/theme/monokai')
+editor.setValue('alert(\'hello, world!\')')
 
-  document.querySelector('body').setAttribute('style', style)
-}, 100)
+document.getElementById('run').addEventListener('click', ev => {
+  eval(editor.getValue())
+})
