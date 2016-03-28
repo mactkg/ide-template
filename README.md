@@ -1,5 +1,5 @@
-# electron template
-## simple and lightweight electron template
+# ide template
+## simple and lightweight electron template to create IDE(?)
 - easy to use
 - no task runner(e.g. gulp, grunt)
 - ES6 ready
@@ -9,7 +9,7 @@
 ## Usage
 
 ```
-$ git clone https://github.com/mactkg/electron-template.git
+$ git clone https://github.com/mactkg/ide-template.git
 $ cd electron-template
 $ npm install & npm start
 ```

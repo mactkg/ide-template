@@ -1,7 +1,7 @@
 {
   "name": "ide-template",
   "version": "1.0.0",
-  "description": "simple and lightweight electron template",
+  "description": "simple and lightweight electron template to create IDE(?)",
   "main": "index.js",
   "scripts": {
     "start": "npm run build && npm-run-all --parallel serve electron watch",
