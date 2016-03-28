@@ -1,5 +1,5 @@
 {
-  "name": "electron-template",
+  "name": "ide-template",
   "version": "1.0.0",
   "description": "simple and lightweight electron template",
   "main": "index.js",
